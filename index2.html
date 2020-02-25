@@ -50,6 +50,37 @@ ol{
 
 </head>
 <body>
+  <SCRIPT LANGUAGE="JavaScript">
+<!--
+function password()
+{
+var count = 0;
+
+// 패스워드를 입력받는 상자를 띄워줌
+var pass = prompt('패스워드를 입력하세요','');
+
+while(count <=2 )
+{
+if (pass == "0726")
+{ alert('어서 오세요!');
+location.href="https://dmitlee.github.io/web1/index2.html";
+break;
+}
+else count+=1;
+
+var pass = prompt('당신은 허가된 사용자가 아닙니다. 다시 입력해 주세요.','');
+}
+
+if(count == 3)
+{
+alert('자꾸 접근하려 하면 혼납니다!');
+location.href="이곳에는 접속불가시 이동할 주소나 등록사이트 주소를 적으세요.";
+}
+}
+
+document.write(password());
+
+//-->
   <h1><a href="index2.html">Lee & Kim</a></h1>
 
   <input type="button" value="나 사랑해?" onclick="alert('웅웅!')">
