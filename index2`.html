@@ -1,7 +1,7 @@
 <!doctype html>
 <html>
 <head>
-<title>Lee & Kim</title>
+<title>HTML-JavaScript</title>
 <meta charset="utf-8">
 <style>
 body{
@@ -50,18 +50,58 @@ ol{
 
 </head>
 <body>
+  <SCRIPT LANGUAGE="JavaScript">
+<!--
+function password()
+{
+var count = 0;
+
+// 패스워드를 입력받는 상자를 띄워줌
+var pass = prompt('패스워드를 입력하세요','');
+
+while(count <=2 )
+{
+if (pass == "0726")
+{ alert('어서 오세요!');
+location.href="https://dmitlee.github.io/web1/index2.html";
+break;
+}
+else count+=1;
+
+var pass = prompt('당신은 허가된 사용자가 아닙니다. 다시 입력해 주세요.','');
+}
+
+if(count == 3)
+{
+alert('자꾸 접근하려 하면 혼납니다!');
+location.href="이곳에는 접속불가시 이동할 주소나 등록사이트 주소를 적으세요.";
+}
+}
+
+document.write(password());
+
+//-->
+</SCRIPT>
+  <h1><a href="index2.html">web</a></h1>
   <input type="button" value="나 사랑해?" onclick="alert('웅웅!')">
-  <h1><a href="index2.html">Lee & Kim</a></h1>
+  <input type ="button" value="night" onclick="
+  document.querySelector('body').style.backgroundColor='black';
+  document.querySelector('body').style.color='white';
+  ">
+  <input type ="button" value="day" onclick="
+  document.querySelector('body').style.backgroundColor='white';
+  document.querySelector('body').style.color='black';
+  ">
   <div id="grid">
      <ol>
-      <li><a href="minho.html">minho</a></li>
-      <li><a href="eunju.html">eunju</a></li>
-      <li><a href="kiss.html">kiss</a></li>
+      <li><a href="minho.html">A</a></li>
+      <li><a href="eunju.html">B</a></li>
+      <li><a href="kiss.html">C</a></li>
       </ol>
     <div id="article">
-      <h2><u>minho & eunju</u></h2>
-        <p>2019년 7월26일 시작하여 <strong>200여일간 만남을 지속해온 <u>닭살 커플</u></strong><br>
-          <img src="coding3.jpeg" width="500"><br> 아흥 헝헝헝 사랑해 죽겠당!!<br>
+      <h2><u>web</u></h2>
+        <p>gdfgfsdgfsgfsd<strong> fdsgfsdg<u>gfdsgfsdggfdsg</u></strong><br>
+          <img src="coding.jpg" width="1 00"><br> gsdfgsdfgsgdgfsdfgdf!!<br>
         </p>
     </div>
 </div>
