@@ -8,11 +8,11 @@ body{
   margin:0;
 }
 a {
-  color:green;
+  color:black;
   text-decoration: none;
 }
 h1 {
-  font-size:45px;
+  font-size:70px;
   text-align: center;
   border-bottom:1px solid gray;
   margin:0;
@@ -21,18 +21,22 @@ h1 {
 h2 {
   font-size:45px;
 }
-ol{
+  ol{
     border-right:1px solid gray;
     width:90px;
     margin:0;
     padding:30px;
+    border-bottom:1px solid gray;
   }
   #grid{
     display: grid;
     grid-template-columns: 150px 1fr;
   }
-  #article{
-    padding-left:25px;
+  #grid ol{
+    padding-left: 33px;
+  }
+  #grid #article{
+    padding-left:25px
   }
 </style>
 
@@ -50,7 +54,7 @@ ol{
 
 </head>
 <body>
-  <script  language="Javascript">
+<!--  <script  language="Javascript">
 <!--
 var goodURL  = "#"  //이곳에 인증이 되었을때 이동할 페이지  입력
     alert("패스워드를 입력하셔야 합니다.")
@@ -76,20 +80,11 @@ var password =  prompt("PASSWD 입력","")
 }
 //-->
 </script>
-  <h1><a href="index2.html">Lee & Kim</a></h1>
-  <a target="_blank" href="https://github.com/dmitlee/web1/blob/master/coding3.jpeg"
-    <img src="https://github.com/dmitlee/web1/blob/master/coding3.jpeg?raw=true" style="max-width:100%; height:auto"></a>
-  <input type="button" value="나 사랑해?" onclick="alert('웅웅!')">
-  <input type ="button" value="night" onclick="
-  document.querySelector('body').style.backgroundColor='black';
-  document.querySelector('body').style.color='white';
-  ">
-  <input type ="button" value="day" onclick="
-  document.querySelector('body').style.backgroundColor='white';
-  document.querySelector('body').style.color='black';
-  ">
+  <h1><a href="index2.html">web</a></h1>
+
+
   <div id="grid">
-a
+    <ol>
       <li><a href="minho.html">minho</a></li>
       <li><a href="eunju.html">eunju</a></li>
       <li><a href="kiss.html">kiss</a></li>
@@ -102,6 +97,15 @@ a
     </div>
 </div>
 
+      <input type="button" value="나 사랑해?" onclick="alert('웅웅!')">
+      <input type ="button" value="night" onclick="
+      document.querySelector('body').style.backgroundColor='black';
+      document.querySelector('body').style.color='white';
+      ">
+      <input type ="button" value="day" onclick="
+      document.querySelector('body').style.backgroundColor='white';
+      document.querySelector('body').style.color='black';
+      ">
 
 
 
