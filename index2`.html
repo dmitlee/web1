@@ -1,40 +1,9 @@
 <!doctype html>
 <html>
 <head>
-<title>HTML-JavaScript</title>
+<title>Lee & Kim</title>
 <meta charset="utf-8">
-<style>
-body{
-  margin:0;
-}
-a {
-  color:black;
-  text-decoration: none;
-}
-h1 {
-  font-size:45px;
-  text-align: center;
-  border-bottom:1px solid gray;
-  margin:0;
-  padding:20px;
-  }
-h2 {
-  font-size:45px;
-}
-ol{
-    border-right:1px solid gray;
-    width:90px;
-    margin:0;
-    padding:30px;
-  }
-  #grid{
-    display: grid;
-    grid-template-columns: 150px 1fr;
-  }
-  #article{
-    padding-left:25px;
-  }
-</style>
+<link type="text/css" rel="stylesheet" href="https://dmitlee.github.io/web1/style.css">
 
 
   <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -50,62 +19,72 @@ ol{
 
 </head>
 <body>
-  <SCRIPT LANGUAGE="JavaScript">
+<script  language="Javascript">
 <!--
-function password()
-{
-var count = 0;
+var goodURL  = "#"  //이곳에 인증이 되었을때 이동할 페이지  입력
+    alert("패스워드를 입력하셔야 합니다.")
 
-// 패스워드를 입력받는 상자를 띄워줌
-var pass = prompt('패스워드를 입력하세요','');
+var password =  prompt("PASSWD 입력","")
 
-while(count <=2 )
-{
-if (pass == "0726")
-{ alert('어서 오세요!');
-location.href="https://dmitlee.github.io/web1/index2.html";
-break;
+    if (password == null)  {
+        alert("출입금지")
+        location  = "http://www.naver.com"         // 실패시 이동 주소       history.back();를 넣어도 됨
+    }
+    else  {
+        var  combo =  password
+        var  total =  combo.toLowerCase()
+
+    if  (total == "0726")  {                // 비밀번호
+        alert("웅!어서왕~!! 은주야^^*. 너일줄 알아썽!^^*.")
+        location  =  goodURL
+    }
+    else  {
+        alert("출입금지")
+        location  = "http://www.naver.com"    // 실패시 이동 주소      history.back();를 넣어도 됨
+    }
 }
-else count+=1;
-
-var pass = prompt('당신은 허가된 사용자가 아닙니다. 다시 입력해 주세요.','');
-}
-
-if(count == 3)
-{
-alert('자꾸 접근하려 하면 혼납니다!');
-location.href="이곳에는 접속불가시 이동할 주소나 등록사이트 주소를 적으세요.";
-}
-}
-
-document.write(password());
-
 //-->
-</SCRIPT>
+</script>
   <h1><a href="index2.html">web</a></h1>
-  <input type="button" value="나 사랑해?" onclick="alert('웅웅!')">
-  <input type ="button" value="night" onclick="
-  document.querySelector('body').style.backgroundColor='black';
-  document.querySelector('body').style.color='white';
-  ">
-  <input type ="button" value="day" onclick="
-  document.querySelector('body').style.backgroundColor='white';
-  document.querySelector('body').style.color='black';
-  ">
+
+
   <div id="grid">
-     <ol>
-      <li><a href="minho.html">A</a></li>
-      <li><a href="eunju.html">B</a></li>
-      <li><a href="kiss.html">C</a></li>
+    <ol>
+      <li><a href="minho.html">minho</a></li>
+      <li><a href="eunju.html">eunju</a></li>
+      <li><a href="kiss.html">kiss</a></li>
+      <li><a href="ex2.html">html-css-heart-1</a></li>
+      <li><a href="ex1.html">html-css-heart-2</a></li>
+      <li><a href="ex3.html">html-css-heart-3</a></li>
+      <li><a href="ex4.html">html-css-heart-4</a></li>
       </ol>
     <div id="article">
-      <h2><u>web</u></h2>
-        <p>gdfgfsdgfsgfsd<strong> fdsgfsdg<u>gfdsgfsdggfdsg</u></strong><br>
-          <img src="coding.jpg" width="1 00"><br> gsdfgsdfgsgdgfsdfgdf!!<br>
+      <h2><u>minho & eunju</u></h2>
+        <p>2019년 7월26일 시작하여 <strong>200여일간 만남을 지속해온 <u>닭살 커플</u></strong><br>
+          <img src="coding3.jpeg" width="60" title="사랑해^^"><br> 아흥 헝헝헝 사랑해 죽겠당!!<br>
         </p>
     </div>
 </div>
 
+
+
+
+
+      <input type="button" value="나 사랑해?" onclick="alert('웅웅!')">
+      <input type ="button" value="night" onclick="
+      document.querySelector('body').style.backgroundColor='black';
+      document.querySelector('body').style.color='white';
+      ">
+      <input type ="button" value="day" onclick="
+      document.querySelector('body').style.backgroundColor='white';
+      document.querySelector('body').style.color='black';
+      ">
+
+      <form action="/action_page.php">
+        <label for="files">Select files:</label>
+        <input type="file" id="files" name="files" multiple><br><br>
+        <input type="submit">
+      </form>
 
 
 
