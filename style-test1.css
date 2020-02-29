@@ -1,5 +1,5 @@
 a {
-  color:black;
+  color:orange;
   text-decoration: none;
 }
 h1 {
@@ -33,7 +33,7 @@ h2 {
 	.img{
 	    position: relative;
 	    background-image: url(https://cdn.pixabay.com/photo/2016/09/25/18/26/a-couple-of-1694334_960_720.jpg);
-	    height: 100vh;
+	    height: 150vh;
 	    background-size: cover;
 	}
 	.img-cover{
@@ -51,5 +51,5 @@ h2 {
 	     font-size:1rem;
 	     color: white;
 	     z-index: 2;
-	     text-align: center;
+	     text-align: left;
 	}
