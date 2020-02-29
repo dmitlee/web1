@@ -4,10 +4,10 @@ a {
 }
 h1 {
   font-size:85px;
-  text-align: center;
-  border-bottom:1px solid black;
+  text-align: left;
+  border-bottom:1px solid gray;
   margin:0;
-  padding:20px;
+  padding:50px;
   }
 h2 {
   font-size:20px;
