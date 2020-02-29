@@ -1,23 +1,12 @@
-#bg {
-  position: fixed;
-  top: -50%;
-  left: -50%;
-  width: 200%;
-  height: 200%;
-}
-#bg img {
-  position:absolute;
-  top:0;
-  left:0;
-  right:0;
-  bottom:0;
-  margin:auto;
-  min-width:50%;
-  min-height:50%
-}
-}
+
 body {
     margin:0;
+  }
+.container {
+  width: 100vw;
+  heghit: 100vh;
+  background: url("https://cdn.pixabay.com/photo/2016/09/25/18/26/a-couple-of-1694334_960_720.jpg
+");
 }
 a {
   color:black;
