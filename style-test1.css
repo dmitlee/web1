@@ -12,16 +12,18 @@ h1 {
 h2 {
   font-size:20px;
 }
-  ol{
+  ul{
     border-right:1px solid gray;
     width:90px;
     margin:0;
-    padding:30px;
+    padding:25px;
     border-bottom:1px solid gray;
+    list-style-image: url(https://github.com/dmitlee/web1/blob/master/jpg/imo.jpeg?raw=true); 
   }
+
   #grid{
     display: grid;
-    grid-template-columns: 150px 1fr;
+    grid-template-columns: 150px 2fr;
   }
   #grid ol{
     padding-left: 33px;
