@@ -1,0 +1,4 @@
+XSS
+<script>
+location.href="www.naver.com";
+</script>
