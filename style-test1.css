@@ -1,5 +1,5 @@
 a {
-  color:#761315;
+  color:red;
   text-decoration: none;
 }
 h1 {
@@ -7,7 +7,7 @@ h1 {
   text-align: center;
   border-bottom:1px solid gray;
   margin:0;
-  padding:10px;
+  padding:50px;
   }
 h2 {
   font-size:20px;
@@ -17,8 +17,8 @@ h2 {
     width:90px;
     margin:0;
     padding:25px;
-
-
+    border-bottom:1px solid gray;
+    
   }
 
   #grid{
@@ -47,7 +47,7 @@ h2 {
 	}
 	.img .content{
 	     position: absolute;
-	     top:30%;
+	     top:35%;
 	     left:50%;
 	     transform: translate(-50%, -50%);
 	     font-size:1rem;
