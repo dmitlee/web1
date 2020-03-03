@@ -1,7 +1,7 @@
 
 body {
     margin:0;
-    
+
   background-color: #cccccc;
 }
   }
@@ -12,7 +12,7 @@ a {
 }
 h1 {
   font-size:70px;
-  text-align: left;
+  text-align: center;
   border-bottom:1px solid gray;
   margin:0;
   padding:20px;
