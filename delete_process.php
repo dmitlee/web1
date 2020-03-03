@@ -1,5 +1,5 @@
 <?php
-unlink('data/'.$_POST['id']);
+unlink('data/'.basname($_POST['id']));
 header('Location: /index.php');
 
 ?>
