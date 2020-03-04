@@ -78,35 +78,15 @@
     <input type="button" value="남녀 입니까?" onclick="alert('그렇습니다!!!')">
     <input type="button" value="남녀 입니까?" onclick="alert('그렇습니다!!!')">
     <input type="button" value="남녀 입니까?" onclick="alert('그렇습니다!!!')">
-    <input type="button" value="남녀 입니까?" onclick="alert('그렇습니다!!!')"><br>
+    <input type="button" value="남녀 입니까?" onclick="alert('그렇습니다!!!')">
 
-    <button onclick="myFucntion()">넌센스 퀴즈</button>
+    <button onclick="myFucntion()">역사 퀴즈</button>
     <p id="check">정답 체크</p>
     <script type="text/javascript">
      function myFucntion() {
-      var kingName = prompt("워캰댜?", "");
-      if(kingName=="폴에바") document.getElementById("check").innerHTML = "쪽쪾쪽쪽쪽ㅉ꼬ㅉ.";
-      else document.getElementById("check").innerHTML = "떙!!떙!!땡! 아! 다시해방!!.";
-     }
-    </script>
-
-    <button onclick="myFucntion()">사랑확인 퀴즈</button>
-    <p id="check">정답 체크</p>
-    <script type="text/javascript">
-     function myFucntion() {
-      var kingName = prompt("우리가 처음 만났던곳?", "");
-      if(kingName=="떼소로") document.getElementById("check").innerHTML = "쪽쪾쪽쪽쪽ㅉ꼬ㅉ.";
-      else document.getElementById("check").innerHTML = "떙!!떙!!땡! 아! 다시해방!!.";
-     }
-    </script>
-
-    <button onclick="myFucntion()">과학 퀴즈^^</button>
-    <p id="check">정답 체크</p>
-    <script type="text/javascript">
-     function myFucntion() {
-      var kingName = prompt("circolo의 반지름이 5이다. 넓이31.4?", "");
-      if(kingName=="31.4") document.getElementById("check").innerHTML = "쪽쪾쪽쪽쪽ㅉ꼬ㅉ.";
-      else document.getElementById("check").innerHTML = "떙!!떙!!땡! 아! 다시해방!!.";
+      var kingName = prompt("한글을 만든 왕은?", "");
+      if(kingName=="세종") document.getElementById("check").innerHTML = "정답입니다.";
+      else document.getElementById("check").innerHTML = "오답입니다.";
      }
     </script>
 
@@ -125,7 +105,11 @@
     document.querySelector('body').style.color='black';
     ">
 
-    
+    <form action="/action_page.php">
+      <label for="files">Select files:</label>
+      <input type="file" id="files" name="files" multiple><br><br>
+      <input type="submit">
+    </form><div id="disqus_thread"></div>
     <script>
 
     /**
