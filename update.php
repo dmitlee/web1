@@ -11,7 +11,7 @@ require_once('lib/print.php');
      ?></title>
   </head>
   <body>
-    <h1><a href="index.php">WEB</h1>
+    <h1><a href="index.html"><i>Home</i></h1>
     <ol>
       <?php
       print_list();
