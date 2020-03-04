@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <style>
+      .red{font-size:20px; color:red;}
+      .blue{font-size:20px; color:blue;}
+      #tast{font-size:20px; color:blie; display:none;}
+
+      </style>
+
+      <Script>
+<h1>오빠가 가장 조아하는것은?</h1>
+      function chkfrm(a){
+        var a=document.getElementsByid("megu").value;
+        if(a==""){
+          document.getElementsByid("test").innerHTML="답을 입력 하지 않았습니다.";
+          document.getElementsByid("test").setATTribute('class','red');
+        }else{document.getElementById('test').style.display="inline";
+        }
+
+      }
+
+      </script>
+
+    <title></title>
+  </head>
+  <body>
+
+    <Script>
+
+    function chkfrm(a){
+      var a=document.getElementsByid("megu").value;
+      if(a==""){
+        document.getElementsByid("test").innerHTML="답을 입력 하지 않았습니다.";
+        document.getElementsByid("test").setATTribute('class','red');
+      }else{document.getElementById('test').style.display="inline";
+      }
+
+    }
+
+    </script>
+
+    <h1>오빠가 가장 조아하는것은?</h1>
+
+    <input type="text" name="memo" id="megu">&nbsp;
+    <input type="button" value="확인" onclick="chkfrm(test1)">
+    <div id="test"></div>
+    <div id="aa" style="display:none">은주냄새</div>
+
+  </body>
+</html>

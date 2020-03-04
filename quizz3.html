@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+ <meta charset="UTF-8">
+ <title>퀴즈 프로그램 만들기</title>
+</head>
+<body>
+ <h1>한국사 8급 문제</h1>
+ <p> 1. 다음 중 고려시대 왕은?</p>
+ <form name="form">
+  <input type="radio" name="kingName" value="v1">근초고왕<br>
+  <input type="radio" name="kingName" value="v2">의자왕<br>
+  <input type="radio" name="kingName" value="v3">충렬왕<br>
+  <input type="radio" name="kingName" value="v4">성종<br>
+  <input type="button" name="선택" value="정답확인" onclick="myFucntion()">
+ </form>
+ <p id="check"></p>
+ <script type="text/javascript">
+  function myFucntion() {
+   if(form.kingName[2].checked==true) document.getElementById("check").innerHTML="정답입니다.";
+   else document.getElementById("check").innerHTML="오답입니다.";
+  }
+ </script>
+</body>
+</html>

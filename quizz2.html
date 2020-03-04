@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+ <meta charset="UTF-8">
+ <title>퀴즈 프로그램 만들기</title>
+</head>
+<body>
+ <button onclick="myFucntion()">역사 퀴즈</button>
+ <p id="check">정답 체크</p>
+ <script type="text/javascript">
+  function myFucntion() {
+   var kingName = prompt("한글을 만든 왕은?", "");
+   if(kingName=="세종") document.getElementById("check").innerHTML = "정답입니다.";
+   else document.getElementById("check").innerHTML = "오답입니다.";
+  }
+ </script>
+</body>
+</html>
