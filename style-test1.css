@@ -1,12 +1,12 @@
-@font-face {
-  font-family: 'Trade Winds', cursive;
-  src: url(https://fonts.googleapis.com/css?family=Trade+Winds&display=swap" rel="stylesheet);
+body{
+  background-color: #F2CD78;
 }
 a {
   color:orange;
   text-decoration: none;
 }
 h1 {
+  background-color: #F2CD78;
   font-size:85px;
   text-align: center;
   border-bottom:1px solid gray;
@@ -26,7 +26,7 @@ h2 {
   }
   p{
     font-size: 100px
-    
+
   }
 
   #grid{
